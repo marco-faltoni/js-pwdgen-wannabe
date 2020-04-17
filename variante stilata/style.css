@@ -1,10 +1,8 @@
 
 /* GENERAL INSTRUCTION */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    background-color: #2d6cdf;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -22,4 +20,39 @@
 
 #anno-password {
     color: pink;
+}
+
+.row {
+    height: 100vh;
+}
+
+img {
+    max-height: 600px;
+    position: relative;
+}
+
+h3 {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    color: white;
+}
+
+.riquadro  {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    border-radius: 12px;
+    min-height: 18%;
+}
+
+@media all and (max-width: 767px) {
+    h3 {
+        font-size: 12px;
+    }
+    .riquadro {
+        border-radius: 6px;
+    }
 }
