@@ -8,6 +8,18 @@
     font-family: 'Rubik', sans-serif;
 }
 
-#password {
+#nome-password {
+    color: red;
+}
+
+#cognome-password {
+    color: green;
+}
+
+#colore-password {
     color: blue;
+}
+
+#anno-password {
+    color: pink;
 }
