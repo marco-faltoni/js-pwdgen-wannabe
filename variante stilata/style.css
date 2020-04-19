@@ -7,19 +7,19 @@ body {
 }
 
 #nome-password {
-    color: red;
+    color: #c1666b;
 }
 
 #cognome-password {
-    color: green;
+    color: #d4b483;
 }
 
 #colore-password {
-    color: blue;
+    color: #48a9a6
 }
 
 #anno-password {
-    color: pink;
+    color: #e4dfda;
 }
 
 .row {
@@ -48,6 +48,177 @@ h3 {
     min-height: 18%;
 }
 
+.circle-element {
+    position: absolute;
+    top: 71%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    min-height: 35%;
+    min-width: 35%;
+    display: flex;
+}
+
+.cerchiodarkgrey {
+    width: 210px;
+    height: 210px;
+    border-radius: 100%;
+    background-color: #595a5c;
+    margin: auto;
+    position: relative;
+}
+
+.verydarkgrey {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333230;
+    border-radius: 100%;
+}
+
+.blackcerchio {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #242323;
+    border-radius: 100%;
+}
+
+.cerchiogrey {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #989998;
+    border-radius: 100%;
+}
+
+.cerchio1 {
+    width: 8%;
+    height: 8%;
+    border-radius: 100%;
+    background-color: #989998;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cerchio2 {
+    width: 8%;
+    height: 8%;
+    border-radius: 100%;
+    background-color: #989998;
+    position: absolute;
+    top: 19%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.cerchio2a {
+    width: 8%;
+    height: 8%;
+    border-radius: 100%;
+    background-color: #989998;
+    position: absolute;
+    top: 19%;
+    right: 71%;
+    transform: translate(-50%, -50%);
+}
+
+.cerchio3 {
+    width: 8%;
+    height: 8%;
+    border-radius: 100%;
+    background-color: #989998;
+    position: absolute;
+    top: 50%;
+    left: 93%;
+    transform: translate(-50%, -50%);
+}
+
+.cerchio3a {
+    width: 8%;
+    height: 8%;
+    border-radius: 100%;
+    background-color: #989998;
+    position: absolute;
+    top: 50%;
+    right: 83%;
+    transform: translate(-50%, -50%);
+}
+
+.cerchio4 {
+    width: 8%;
+    height: 8%;
+    border-radius: 100%;
+    background-color: #989998;
+    position: absolute;
+    top: 79%;
+    left: 81%;
+    transform: translate(-50%, -50%);
+}
+
+.cerchio4a {
+    width: 8%;
+    height: 8%;
+    border-radius: 100%;
+    background-color: #989998;
+    position: absolute;
+    top: 79%;
+    right: 71%;
+    transform: translate(-50%, -50%);
+}
+
+.cerchio5 {
+    width: 8%;
+    height: 8%;
+    border-radius: 100%;
+    background-color: #989998;
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* ANIMAZIONI */
+
+.pass {
+    filter: brightness(0%);
+    animation-name: svelati;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes svelati {
+    0% { filter: brightness(0%); }
+    100% { filter: brightness(100%); }
+}
+
+.cerchiodarkgrey {
+    animation: rotate 2s linear 1;
+    animation-delay: 0.5s;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+
+
+/* MEDIA QUERY */
+
 @media all and (max-width: 767px) {
     h3 {
         font-size: 12px;
@@ -55,4 +226,73 @@ h3 {
     .riquadro {
         border-radius: 6px;
     }
+
+    .cerchiodarkgrey {
+        width: 184px;
+        height: 184px;
+    }
+
+    .verydarkgrey {
+        width: 131px;
+        height: 131px;
+    }
+
+    .blackcerchio {
+        width: 105px;
+        height: 105px;
+    }
+
+    .cerchiogrey {
+        width: 88px;
+        height: 88px;
+    }
+
+}
+
+@media all and (max-width: 450px) {
+
+    .cerchiodarkgrey {
+        width: 124px;
+        height: 124px;
+    }
+
+    .verydarkgrey {
+        width: 88px;
+        height: 88px;
+    }
+
+    .blackcerchio {
+        width: 70px;
+        height: 70px;
+    }
+
+    .cerchiogrey {
+        width: 58px;
+        height: 58px;
+    }
+
+}
+
+@media all and (max-width: 370px) {
+
+    .cerchiodarkgrey {
+        width: 105px;
+        height: 105px;
+    }
+
+    .verydarkgrey {
+        width: 75px;
+        height: 75px;
+    }
+
+    .blackcerchio {
+        width: 60px;
+        height: 60px;
+    }
+
+    .cerchiogrey {
+        width: 50px;
+        height: 50px;
+    }
+
 }
